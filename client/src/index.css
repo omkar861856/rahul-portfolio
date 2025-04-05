@@ -179,4 +179,66 @@
   .mobile-menu.hidden {
     transform: translateX(-100%);
   }
+  
+  /* Custom colors */
+  .bg-maroon {
+    background-color: #6B1D32;
+  }
+  
+  .bg-maroon-dark {
+    background-color: #4A1322;
+  }
+  
+  .text-maroon {
+    color: #6B1D32;
+  }
+  
+  .text-gold {
+    color: #D4A76A;
+  }
+  
+  .text-dark {
+    color: #2E2A25;
+  }
+  
+  .text-cream {
+    color: #F4E9D7;
+  }
+  
+  .bg-gold {
+    background-color: #D4A76A;
+  }
+  
+  .bg-cream {
+    background-color: #F4E9D7;
+  }
+  
+  .border-gold {
+    border-color: #D4A76A;
+  }
+  
+  .bg-dark {
+    background-color: #2E2A25;
+  }
+  
+  /* Background patterns */
+  .bg-pattern {
+    position: relative;
+  }
+  
+  .bg-pattern::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+      circle at 10px 10px,
+      rgba(212, 167, 106, 0.1) 2px,
+      transparent 3px
+    );
+    background-size: 20px 20px;
+    z-index: 1;
+  }
 }

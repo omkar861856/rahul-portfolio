@@ -226,19 +226,19 @@ export default function Home() {
       </section>
       
       {/* Events Section */}
-      <section id="events" className="py-16 md:py-24 bg-maroon text-cream relative">
-        <div className="absolute inset-0 z-0 opacity-10">
+      <section id="events" className="py-16 md:py-24 bg-gradient-to-b from-maroon to-maroon-dark text-cream relative">
+        <div className="absolute inset-0 z-0 opacity-15 bg-pattern">
           <img 
             src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
             alt="Event Texture" 
-            className="w-full h-full object-cover" 
+            className="w-full h-full object-cover mix-blend-overlay" 
           />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-sm uppercase tracking-wider font-montserrat font-semibold text-gold">Live Experiences</h2>
-            <h3 className="text-3xl md:text-5xl font-playfair font-bold text-cream mt-2 mb-4">Upcoming Shows</h3>
+            <h3 className="text-3xl md:text-5xl font-playfair font-bold text-cream mt-2 mb-4 drop-shadow-lg">Upcoming Shows</h3>
             <div className="w-24 h-1 bg-gold mx-auto"></div>
           </div>
           
@@ -310,11 +310,17 @@ export default function Home() {
                 
                 <div className="mt-auto">
                   <h4 className="text-xl font-playfair font-bold text-dark mb-4">Performance Locations</h4>
-                  <img 
-                    src="https://images.unsplash.com/photo-1589223484522-89baace5f05a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80" 
-                    alt="Bangalore Map" 
-                    className="w-full h-48 object-cover rounded-lg shadow-md" 
-                  />
+                  <div className="w-full h-48 rounded-lg shadow-md overflow-hidden border-2 border-gold">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9976945855356!2d77.6408!3d12.9783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167beeddb2ef%3A0x8777e918df96f5fc!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" 
+                      width="100%" 
+                      height="100%" 
+                      style={{ border: 0 }} 
+                      allowFullScreen={false} 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
                   <div className="mt-4 grid grid-cols-2 gap-3">
                     <div className="bg-cream bg-opacity-70 p-3 rounded-lg border border-gold border-opacity-20">
                       <h5 className="font-montserrat font-semibold text-maroon text-sm">The Humming Tree</h5>
